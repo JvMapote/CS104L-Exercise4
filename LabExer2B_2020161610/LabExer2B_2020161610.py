@@ -4,6 +4,7 @@ import os
 def bura():  
     os.system( 'cls' )
 
+
 #Represent a node of doubly linked list 
 class Node:    
     def __init__(self,data):    
@@ -11,17 +12,20 @@ class Node:
         self.previous = None;    
         self.next = None;    
             
+
 class SearchList:    
     #Represent the head and tail of the doubly linked list    
     def __init__(self):    
         self.head = None;    
         self.tail = None;    
             
+
     #addNode() will add a node to the list    
     def addNode(self, data):    
         #Create a new node    
         newNode = Node(data);    
-            
+      
+        
         #If list is empty    
         if(self.head == None):    
             #Both head and tail will point to newNode    
